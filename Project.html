@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .field{
+            border-bottom: 1px solid gray;
+        }
+        
+        .field:hover .bat{
+            transform-origin: top right;
+            transform: rotate(-60deg);  
+            transition: transform .5s ease-in-out;
+        }
+        .ball{
+            position: relative;
+            left: 250px;
+            top: 0px;
+            background-color: red;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+       
+        .field:hover .ball{
+            transform: translate(950px, -150px);
+            transition: transform .5s ease-in-out 0.5s;
+        } 
+
+      
+       
+       
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Project.html">Projects
+                    <ul class="dropdown">
+                        <li><a href="Project.html">Cricket</a></li>
+                        <li><a href="Project-2.html">Cricket-2</a></li>
+                        <li><a href="Project-3.html">Air Plane</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="https://sujonaust2008.github.io/portfolio-assignment/" target="-blank">Portfolio</a></li>
+                <li><a href="Table.html">Table</a></li>
+                <li><a href="Contact.html">Contact</a></li>    
+            </ul>  
+        </nav>   
+    </header>
+    <div class="field">
+        <h1>Project-1</h1>
+        <img class="bat" src="image/img/bat.jpg" alt="">
+        <div class="ball"></div>
+    </div>
+
+</body>
+</html>

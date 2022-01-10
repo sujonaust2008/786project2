@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.section-area{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    margin-bottom: 150px;
+}
+header{
+    margin-bottom: 150px;
+}
+nav {
+    padding-right: 15px;
+    border: 1px solid red;
+}
+nav >ul{
+    display: flex;
+}
+
+nav > ul >li{
+    border: 1px solid lightpink;
+    padding: 5px 10px;
+    background-color: blue;
+    border-radius: 5px;
+    list-style: none;
+    margin-right: 15px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav > ul> li:hover > ul{
+    display: block;
+}
+
+.dropdown {
+    padding: 5px;
+    list-style: none;
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+} 
+
+.dropdown li{
+    margin-top: 2px;
+    padding: 5px;
+    background-color: blue;
+    border-bottom: 1px solid gray;
+}
+
+.title-align{
+    text-align: center;
+}
+.contact-section{
+    border-radius: 10px;
+    border: 1px solid gray;
+    width: 50%;
+    margin: 5% auto;
+    padding: 5%;
+}
+.contact-section p{
+    line-height: 0;
+}
+.inputstyle{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 6px;
+}
+.submitArea{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 35px;
+}
+.price-section{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.price-section ul{
+    text-align: left;
+    margin-bottom: 45px;
+}
+.price-section li{
+    font-size: 16px;
+    list-style: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.width-one-third{
+    width: 25%;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 3%;
+    padding: 25px;
+}
+.button02{
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 35px;
+    background-color: rgb(5, 171, 236);
+}
+h5{
+    font-size: 20px;
+}

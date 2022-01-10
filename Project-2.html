@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        .field2{
+            width: 100%;
+            height: 500px;
+            border: 1px solid red;
+        }
+        * .field2:hover .bat2{
+            transform-origin: top right;
+            transform: rotate(-60deg);  
+            transition: transform .5s ease-in;
+        }  */
+        .bat3{
+            position: relative;
+            animation-name: ex3;
+            animation-duration: 2s;  
+            animation-delay: .5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+            animation-iteration-count: 1;
+        }
+        @keyframes ex3 {
+            0%{transform: rotate(0deg);transform-origin: top right;}  
+            50%{transform: rotate(-60deg);transform-origin: top right;}
+            100%{transform: rotate(0deg);transform-origin: top right;}
+
+        }
+        .ball2{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid black;
+            background: red;
+            position: relative;
+            animation-name: example2;
+            animation-duration: 2s;  
+            animation-delay: .5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+            animation-iteration-count: 1;
+        }
+        
+        @keyframes example2 {
+            0%{left: 95%; top: -150px;}
+            25%{left: 35%; top: 35px;}
+            50%{left: 240px; top: -50px;}
+            100%{left: 95%; top: -280px}
+
+        }
+        .six{
+            width: 20%;
+            position: relative;
+            animation-name: example3;
+            animation-duration: 0.5s;  
+            animation-delay: 3s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+            animation-iteration-count: 1;
+        }
+        @keyframes example3 {
+            0%{left: 50%; top: 0px; visibility: hidden;}
+            100%{left: 50%; top: -180px; visibility: visible}
+
+        }
+        .pitch{
+            border-bottom: 10px solid lightgreen;
+            margin-top: 33.5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Project.html">Projects
+                    <ul class="dropdown">
+                        <li><a href="Project.html">Cricket</a></li>
+                        <li><a href="Project-2.html">Cricket-2</a></li>
+                        <li><a href="Project-3.html">Air Plane</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="https://sujonaust2008.github.io/portfolio-assignment/" target="-blank">Portfolio</a></li>
+                <li><a href="Table.html">Table</a></li>
+                <li><a href="Contact.html">Contact</a></li>    
+            </ul>  
+        </nav>   
+    </header>
+    <section>
+        <div class="field2">
+            <h1>Project-2</h1>
+            <img class="bat3" src="image/img/bat.jpg" alt="">
+            
+            <div class="ball2"></div>
+            <div class="pitch"></div>
+            <div>
+                <img class="six"src="image/img/six2.png" alt="">
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>

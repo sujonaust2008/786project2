@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .project3{
+           height: 450px;
+        }
+        .Airport{
+            width: 100%;
+            height: 450px;
+            
+        }
+        .airplane{
+            width: 25%;
+            position: relative;
+            animation-name: example2;
+            animation-duration: 5s;  
+            animation-delay: .5s;
+            animation-timing-function: linear;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes example2 {
+            0%{left: 75%; top: -150px;}
+            40%{left: 40%; top: -150px;}
+            50%{left: 35px; top: -250px; transform: rotate(15deg);}
+            100%{left: -25%; top: -380px}
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Project.html">Projects
+                    <ul class="dropdown">
+                        <li><a href="Project.html">Cricket</a></li>
+                        <li><a href="Project-2.html">Cricket-2</a></li>
+                        <li><a href="Project-3.html">Air Plane</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="https://sujonaust2008.github.io/portfolio-assignment/" target="-blank">Portfolio</a></li>
+                <li><a href="Table.html">Table</a></li>
+                <li><a href="Contact.html">Contact</a></li>    
+            </ul>  
+        </nav>   
+    </header>
+    <section class="project3">
+        <div><h1>Project Air-Plane</h1></div>
+        <div>
+            <img class="Airport" src="image/img/airportPic.jpg" alt="">
+        </div>
+        <img class="airplane" src="image/img/airplane2.png" alt="">
+    </section>
+</body>
+</html>
